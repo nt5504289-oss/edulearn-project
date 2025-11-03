@@ -1,0 +1,87 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Background === */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0078d7, #00b4db);
+  color: #333;
+}
+
+/* === Registration Section === */
+.regi-form {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 50px 40px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.8s ease;
+}
+
+/* === Heading === */
+.hero {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.4);
+}
+
+/* === Labels === */
+.label-box {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  color: #ffeb3b;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* === Input Fields === */
+.input-box,
+.select-box {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.input-box:focus,
+.select-box:focus {
+  box-shadow: 0 0 10px #00b4db;
+  transform: scale(1.03);
+}
+
+/* === Button === */
+.btn-box {
+  width: 100%;
+  background: linear-gradient(135deg, #00b4db, #0078d7);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-box:hover {
+  background: linear-gradient(135deg, #0078d7, #005dbb);
+  tr
