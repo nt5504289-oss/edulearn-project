@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* === Base Reset === */
 * {
   margin: 0;
@@ -121,3 +122,128 @@ header nav a:hover {
   header nav a {
     margin-right: 20px;
     font-size: 1rem
+=======
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Background === */
+body {
+  background: linear-gradient(135deg, #0078d7, #00b4db);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Header === */
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 15px 0;
+  text-align: right;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 40px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffeb3b;
+}
+
+/* === Login Box === */
+.login-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 50px 40px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* === Form Inputs === */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login-box label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffeb3b;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.login-box input:focus {
+  box-shadow: 0 0 10px #00b4db;
+  transform: scale(1.02);
+}
+
+/* === Button === */
+.login-box button {
+  width: 100%;
+  background: linear-gradient(135deg, #00b4db, #0078d7);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-box button:hover {
+  background: linear-gradient(135deg, #0078d7, #005dbb);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  .login-box {
+    width: 85%;
+    padding: 40px 25px;
+  }
+
+  header nav a {
+    margin-right: 20px;
+    font-size: 1rem
+>>>>>>> 982a329 (commit)

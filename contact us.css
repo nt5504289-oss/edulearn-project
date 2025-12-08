@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* === Base Reset === */
 * {
   margin: 0;
@@ -159,3 +160,166 @@ textarea {
     font-size: 0.95rem;
   }
 }
+=======
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Body === */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0078d7, #00b4db);
+  color: #333;
+  padding: 40px 20px;
+}
+
+/* === Contact Section === */
+.contact-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 50px 40px;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.8s ease;
+}
+
+/* === Heading === */
+.contact-box h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.4);
+}
+
+.contact-box p {
+  color: #f9f9f9;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+/* === Form === */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label-box {
+  font-weight: 600;
+  color: #ffeb3b;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.input-box,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.input-box:focus,
+textarea:focus {
+  box-shadow: 0 0 10px #00b4db;
+  transform: scale(1.02);
+}
+
+/* === Textarea === */
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* === Button === */
+.btn {
+  width: 100%;
+  background: linear-gradient(135deg, #00b4db, #0078d7);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #0078d7, #005dbb);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* === Contact Info === */
+.contact-info {
+  margin-top: 40px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 25px;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.contact-info h3 {
+  font-size: 1.4rem;
+  color: #ffeb3b;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.contact-info strong {
+  color: #00ffff;
+}
+
+/* === Animation === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .contact-box {
+    padding: 35px 25px;
+  }
+
+  .contact-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    font-size: 0.95rem;
+  }
+}
+>>>>>>> 982a329 (commit)
